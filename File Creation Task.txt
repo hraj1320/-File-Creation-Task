@@ -1,0 +1,57 @@
+
+
+#### 1. Create a Directory and Navigate Inside
+   - Step 1:Create a directory called `my_folder`:
+     ```shell
+     mkdir my_folder
+     ```
+   -Step 2:Move into the `my_folder` directory to work inside it:
+     ```shell
+     cd my_folder
+     ```
+
+#### 2. Create Files and Add Text
+   -Step 3:Create a file called `my_file.txt` and add some text to it:
+     ```shell
+     echo "This is the content of my_file.txt" > my_file.txt
+     ```
+   - Step 4: Create another file called `another_file.txt` and add some text to it:
+     ```shell
+     echo "This is the content of another_file.txt" > another_file.txt
+     ```
+
+#### 3. Concatenate File Contents
+   -Step 5:Append the content of `another_file.txt` to `my_file.txt`:
+     ```shell
+     cat another_file.txt >> my_file.txt
+     ```
+   - Step 6:Display the updated content of `my_file.txt`:
+     ```shell
+     cat my_file.txt
+     ```
+
+#### 4. List Files and Directories
+   -Step 7:List all files and directories in the current folder:
+     ```shell
+     ls -l
+     ```
+
+#### 5. Create 20 `.txt` Files
+   - Step 8: Use a loop to create 20 `.txt` files named `file1.txt`, `file2.txt`, and so on:
+     ```shell
+     for i in {1..20}; do touch file$i.txt; done
+     ```
+
+#### 6. Rename First 5 Files to `.yml` Extension
+   -Step 9:Rename the first 5 `.txt` files to have a `.yml` extension:
+     ```shell
+     for i in {1..5}; do mv file$i.txt file$i.yml; done
+     ```
+
+#### 7. Display the Latest 5 Created Files
+   -Step 10: Show the 5 most recently created or modified files:
+     ```shell
+     ls -lt | head -5
+     ```
+
+ 
